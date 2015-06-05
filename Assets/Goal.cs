@@ -16,6 +16,7 @@ public class Goal : MonoBehaviour {
 	void OnTriggerEnter (Collider c)
 	{
 		Debug.Log ("Goal !!!!");
+		c.SendMessage ("OnGoal");
 	}
 
 }
